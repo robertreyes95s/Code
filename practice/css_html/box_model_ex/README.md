@@ -1,6 +1,8 @@
 # Notes from 'Box Model' 
 
-This is the code to the box model section in teh course on codecademy for css 
+This is the code for the the section in the codecadmey course known as 'Box Model' 
 
-Notes live the click up task
+The notes live on 'Click Up' in the CSS task doc
+
+## :)
 
