@@ -1,4 +1,4 @@
-#Color Example
+# Color Example
 
 this is the code from codecasdmey that shows exmaples of using colors 
 
