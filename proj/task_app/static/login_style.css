@@ -1,0 +1,41 @@
+.form-signin-heading { 
+    position: absolute;
+    color: green;
+}
+
+
+input[type="text"] { 
+    border-color: black;
+    border: 2px solid #000000;
+    padding: 5px;
+    text-align: left;
+    width: 17%;
+    position: absolute;
+    top: 450px;
+    left: 600px;
+
+}
+
+input[type="password"] { 
+    border-radius: black;
+    border-color: black;
+    border: 2px solid #000000;
+    padding: 5px;
+    text-align: left;
+    width: 17%;
+    position: absolute;
+    top: 480px;
+    left: 600px;
+}
+
+.checkbox {
+    padding: 5px;
+    text-align: center;
+    width: 20%;
+    position: absolute;
+    top: 510px;
+    left: 470px;
+}
+
+
+

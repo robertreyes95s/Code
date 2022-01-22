@@ -9,4 +9,3 @@ results = soup.find(class_="main-content-div")
 
 table_element = results.find_all("div", class_="tb-scroll")
 
-
