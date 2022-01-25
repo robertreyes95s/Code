@@ -1,4 +1,8 @@
-# Repo for Basic Code
+# Local Code Repo
 
-This holds basic code/projects that i'm currenty practicing and studying
+## This Repo holds the following...
 
+- Practicing Code
+- Courses Code
+- Project Code
+- Testing Code 
