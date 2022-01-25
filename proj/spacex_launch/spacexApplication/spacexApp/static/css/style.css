@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
+
+body {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  #banner {
+    background-image: url("/static/image/banner_img.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%
+  }
+
+  #banner .content h1 { 
+      /*border: 3px solid white;*/
+      position: relative;
+      top: 35px;
+      width: 1200px;
+      margin: 0 auto;
+  }
+
+  h1 {
+    text-transform: Uppercase;
+    margin-bottom: .5em;
+    font-family: 'Rubik', sans-serif;
+    font-size: 6rem;
+    color: #E4E5E6; 
+}
