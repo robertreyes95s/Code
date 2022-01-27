@@ -3,5 +3,6 @@ from . import views
 
 urlpatterns = [
     #Home page
-    re_path(r'^$', views.index, name='index')
+    re_path(r'^$', views.index, name='index'),
+    re_path('', views.upcoming_launch, name='upcoming launch'),
 ]
