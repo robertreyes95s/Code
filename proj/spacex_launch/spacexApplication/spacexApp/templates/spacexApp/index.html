@@ -1,4 +1,6 @@
+{% extends 'spacexApp/base.html' %}
 {% load static %}
+{% block content %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,5 +25,14 @@
         </ul>
     </nav>
 
+    <div id="next-launch" class="timer">
+        <h1>Upcoming Launch</h1>
+        {% for i in all_data %}
+        <h1 class="up-launch">{{i.launch}}</h1>
+        {% endfor %}
+    </div>
+    
 </body>
 </html>
+
+{% endblock %}

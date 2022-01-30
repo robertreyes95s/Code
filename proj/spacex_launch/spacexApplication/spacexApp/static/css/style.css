@@ -30,3 +30,40 @@ body {
     font-size: 6rem;
     color: #E4E5E6; 
 }
+
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+  .navigation li {
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding: 20px;
+}
+
+  .navigation  li.logo {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+  #next-launch {
+    background-image: url("/static/image/next-launch.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 950px;
+    width: 100%
+
+ }
+
+  #up-launch li {
+    text-transform: Uppercase;
+    margin-bottom: .5em;
+    font-family: 'Rubik', sans-serif;
+    font-size: 6rem;
+    color: #E4E5E6;
+  }
