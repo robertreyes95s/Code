@@ -76,12 +76,12 @@ WSGI_APPLICATION = 'spacexName.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'django_jobs',
         'USER': 'django_user',
         'PASSWORD': 'welcome',
         'HOST': 'localhost',
-        'PORT': ''
+        'PORT': '5432'
     }
 }
 

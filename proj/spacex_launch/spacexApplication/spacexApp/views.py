@@ -14,4 +14,4 @@ def upcoming_launch(request):
     response = requests.get(url)
     data = response.json()
     return render(request, "spacexApp/index.html", {"data": data})
-i"""
+"""

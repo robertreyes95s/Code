@@ -14,7 +14,7 @@ class Command(BaseCommand):
 
         # Collect html
         req = Request("https://spaceflightnow.com/launch-schedule/", headers={'User-Agent': 'Mozilla/5.0'})
-        html = urlopen(req).read()
+        html = urlopen(req)
 
         #convert to soup 
         soup = BeautifulSoup(html, 'html.parser')
@@ -25,22 +25,12 @@ class Command(BaseCommand):
         for data in main_data:
             title =       data.find('span', class_='mission').text
             launch_date = data.find('span', class_='launchdate').text
-            launch_info = data.find('div', class_='missiondata').text
+            launch_site = data.find('span', class_='strong').text
             description = data.find('div', class_='missdescrip').text
 
-            # Check if url in db 
-            try:
-                # save in db
-                futureLaunch.objects.create(
-                    title=title, 
-                    launch_date=launch_date,
-                    launch_info=launch_info,
-                    description=description
-                )
-                print('%s added' % (title,))
-            except:
-                print('%s already exists' % (title,))
-
-        self.stdout.write( 'Job complete')
-
-
+            futureLaunch.objects.create(
+                title=title,
+                launch_date=launch_date,
+                launch_site=launch_site,
+                description=description,
+            )
