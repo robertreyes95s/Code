@@ -26,9 +26,9 @@
     </nav>
 
     <div id="next-launch" class="timer">
-        <h1>Upcoming Launch</h1>
-        {% for i in all_data %}
-        <h1 class="up-launch">{{i.launch}}</h1>
+        <h1>Launch date </h1>
+        {% for i in data %}
+        <li class="up-launch">{{i.launch_date_local}}</li>
         {% endfor %}
     </div>
     
