@@ -23,24 +23,25 @@ class Command(BaseCommand):
         main_data = soup.find_all("div", class_="mh-content")
 
         for data in main_data:
-            title =       data.find('span', class_='mission').text
-            launch_date = data.find('span', class_='launchdate').text
-            launch_info = data.find('div', class_='missiondata').text
-            description = data.find('div', class_='missdescrip').text
+            title =       data.find_all('span', class_='mission')
+            launch_date = data.find_all('span', class_='launchdate')
+            launch_info = data.find_all('div', class_='missiondata')
+            description = data.find_all('div', class_='missdescrip')
 
-            # Check if url in db 
-            try:
-                # save in db
+           # save in db
+            for (t, date, info, desc) in zip(title, launch_date, launch_info, description):
+                t.find('span', class_='mission')
+                date.find('span', class_="launchdate")
+                info.find('div', class_="missondata")
+                desc.find('div', class_='missdescrip')
+
                 futureLaunch.objects.create(
-                    title=title, 
-                    launch_date=launch_date,
-                    launch_info=launch_info,
-                    description=description
+                    title=t.text,
+                    launch_date=date.text,
+                    launch_info=info.text,
+                    description=desc.text
                 )
-                print('%s added' % (title,))
-            except:
-                print('%s already exists' % (title,))
-
+                #print(t.text, date.text, info.text, desc.text)
+                
         self.stdout.write( 'Job complete')
-
 
