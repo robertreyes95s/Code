@@ -4,7 +4,7 @@ class futureLaunch(models.Model):
     title = models.CharField(max_length = 200)
     launch_date = models.CharField(max_length=200)
     launch_info = models.CharField(max_length=200)
-    description = models.CharField(max_length=700)
+    description = models.CharField(max_length=1000)
     
 
     def __str__(self):

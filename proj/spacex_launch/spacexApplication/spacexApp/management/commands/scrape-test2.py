@@ -1,3 +1,4 @@
+from django import forms
 from django.core.management.base import BaseCommand
 
 from urllib.request import urlopen, Request
@@ -29,14 +30,22 @@ class Command(BaseCommand):
             description = data.find_all('div', class_='missdescrip')
 
            # save in db
-            futureLaunch.objects.create(
-                title=title, 
-                launch_date=launch_date,
-                #launch_info=launch_info.text,
-                #description=description.text
-            )
-                #print('%s added' % (title,))
-            #except:
-                #print('%s already exists' % (title,))
-
+            for (t, date, info, desc) in zip(title, launch_date, launch_info, description):
+                t.find('span', class_='mission')
+                date.find('span', class_="launchdate")
+                info.find('div', class_="missondata")
+                desc.find('div', class_='missdescrip')
+                
+                try:
+                    futureLaunch.objects.create(
+                        title=t.text,
+                        launch_date=date.text,
+                        launch_info=info.text,
+                        description=desc.text
+                    )
+                    print('%s added' % (t.text,))
+                except:
+                    print('%s already exists' % (t.text,))
+               
+                
         self.stdout.write( 'Job complete')
