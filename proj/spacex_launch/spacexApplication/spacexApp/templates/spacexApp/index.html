@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SpaceX Launch Cast</title>
+    <title>Launch Cast</title>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
@@ -17,20 +17,17 @@
         </div>
     </div>
 
-    <nav class="navigation">
-        <ul>
-          <li class="logo">Next Launch</li>
-          <li>Last Launch</li>
-          <li>Past Launches</li>
-        </ul>
-    </nav>
+    <div id ="main" class="content"> 
+        <h2>Launch Dates and Times<h2>
 
-    <div id="next-launch" class="timer">
+    </div>
+
+   <!--<div id="next-launch" class="timer">
         <h1>Upcoming Launch</h1>
         {% for i in all_data %}
         <h1 class="up-launch">{{i.launch}}</h1>
         {% endfor %}
-    </div>
+    </div> -->
     
 </body>
 </html>
