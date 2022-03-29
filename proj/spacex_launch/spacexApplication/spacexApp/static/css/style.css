@@ -12,7 +12,9 @@ body {
     background-size: cover;
     background-position: center;
     height: 600px;
-    width: 100%
+    width: 100%;
+    padding: 0px;
+    overflow-x: hidden;
   }
 
   #banner .content h1 { 
@@ -23,6 +25,16 @@ body {
       margin: 0 auto;
   }
 
+  #main { 
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    width: 400px;
+    height: 1000px;
+    overflow: scroll;
+
+  }
+
   h1 {
     text-transform: Uppercase;
     margin-bottom: .5em;
@@ -31,34 +43,15 @@ body {
     color: #E4E5E6; 
 }
 
-  .navigation ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
 
-
-  .navigation li {
-    font-weight: 100;
-    letter-spacing: 2px;
-    padding: 20px;
-}
-
-  .navigation  li.logo {
-    color: black;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 4px;
-}
-
-  #next-launch {
+  /*#next-launch {
     background-image: url("/static/image/next-launch.jpg");
     background-size: cover;
     background-position: center;
     height: 950px;
     width: 100%
 
- }
+ } */
 
   #up-launch li {
     text-transform: Uppercase;
