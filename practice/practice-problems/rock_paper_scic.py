@@ -3,34 +3,38 @@
 # python3
 import getpass as gp
 import time
+import random
 
-def game(): 
+def game():
     player1_name = input("Enter a name for Player 1")
-    player2_name = input("Enter a name for Plater 2")
-
     player1 = player1_name
-    player2 = player2_name
 
-    turns = 0
+    rock = 1
+    paper = 2
+    scissors = 3
+
+    turns =
     while turns < 3:
         player1_score = 0
-        player2_score = 0
+        playerAI_score = 0
+
+        choices_ai = [1, 2, 3]
 
         p1_choice = gp.getpass("Player 1 Choose: Rock[1], paper[2], or scissors[3]")
-        p2_choice = gp.getpass("Plater 2 Choose: Rock[1], paaper[2], or scissors[3]")
+        ai_choice = random.choice(choices_ai)
 
-        if p1_choice == 1 and p2_choice == 2: 
-            print(player2_name, "wins this round")
-        elif p1_choice == 2 and p2_choice == 1 
-
-        
+        if p1_choice == 1 and ai_choice == 2:
+            plater1_scroe += 1
+            print("player1 wins" + p1_choice +  " beats " + ai_choice)
+        else:
+            prin("Nothing")
 
 
 print("Hello, welcome to Rock Paper Scissors")
-determine_game = input("Do you wnat to play?")
+determine_game = input("Do you want to play?")
 if determine_game == "Yes" or 'y' or "Y" or "YES" or "yes":
     game()
-else: 
+else:
     exit
 
 
