@@ -1,0 +1,7 @@
+  PID TTY      STAT   TIME COMMAND
+    9 pts/0    Ss     0:01 -zsh
+   14 pts/0    S      0:00 -zsh
+   42 pts/0    S      0:00 -zsh
+   44 pts/0    S      0:00 -zsh
+   45 pts/0    Sl     0:02 /home/pluto/.cache/gitstatus/gitstatusd-linux-x86_64 -G v1.5.1 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 24
+   99 pts/0    R+     0:00 ps w
