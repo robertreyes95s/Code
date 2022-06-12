@@ -10,7 +10,7 @@
 </head>
 
 <body> 
-    
+
     <div id="banner">
         <div class="content">
             <h1>Space Launches</h1>
@@ -18,13 +18,20 @@
     </div>
 
     <div class="launches"> 
-        <h2>Launch Dates<h2>
+        <h2>Launch Dates</h2>
 
         <div class="'specturm">
-            <li>
-                <h3>Launch1</h3>
-                <p>This is a launch test</p>
-            </l1>
+            <ul>
+            {% for obj in launch_obj %}
+            
+                <li>{{ obj.title }} • {{obj.launch_date}}
+                    <!--<p class="l_date">Launch Date: {{obj.launch_date}}</p>-->
+                    <p class="l_window">{{obj.launch_info}}</p>
+                    <p class="desc">{{obj.description}}</p>
+                </li>
+                
+            {% endfor %}
+            </ul>
         </div>
     </div>
 
