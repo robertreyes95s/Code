@@ -35,7 +35,7 @@ class Command(BaseCommand):
                 info.find('div', class_="missondata")
                 desc.find('div', class_='missdescrip')
 
-                futureLaunch.objects.create(
+                futureLaunch.objects.get_or_create(
                     title=t.text,
                     launch_date=date.text,
                     launch_info=info.text,
