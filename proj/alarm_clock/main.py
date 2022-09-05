@@ -5,8 +5,9 @@ import time
 app = Tk()
 
 app.geometry('400x300')
-app.title("Alarm Clock")
+app.title("Study Clock")
 
+main_title = Label("Study Time Tracker")
 
 hour = Entry(app, text='', width=2)
 hour.grid(column = 0, row = 1)
