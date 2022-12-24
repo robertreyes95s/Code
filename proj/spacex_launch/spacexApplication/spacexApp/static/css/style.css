@@ -38,7 +38,7 @@ body {
   h1 {
     text-transform: Uppercase;
     margin-bottom: .5em;
-    font-family: 'Source Code Pro', sans-serif;
+    font-family: 'Fira Code';
     font-size: 6rem;
     margin: 0;
     position: relative;
@@ -49,8 +49,8 @@ body {
   h2 { 
     border-bottom: 1px solid #8f8f8f;
     color: #000000;
-    font-family: 'Source Code Pro', sans-serif;
-    font-size: 30px;
+    font-family: 'Hermit';
+    font-size: 40px;
     font-weight: 500;
     text-align: left;
     text-transform: uppercase;
@@ -67,8 +67,11 @@ body {
   li {
     border-bottom: 1px solid #7cbcc7;
     list-style: none;
-    margin: 100px 0px;
+    margin: 50px 0px;
     padding-bottom: 20px;
+    font-family: 'Hermit';
+    font-size: 30px;
+    font-weight: medium;
   }
 
   p {
@@ -79,3 +82,27 @@ body {
     font-weight: 100;
   }
   
+  .l_date {
+    color: #444444;
+    line-height: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .l_window {
+    color: #444444;
+    line-height: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .desc {
+    color: #444444;
+    line-height: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 100;
+  }
